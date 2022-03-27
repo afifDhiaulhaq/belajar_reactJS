@@ -1,18 +1,20 @@
-import React from 'react'
+import React from "react";
 // import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
-      super(props);
-      this.state = { liked: false };
+    super(props);
+    this.state = { liked: false };
   }
 
   render() {
-    let button = <button onClick={() => this.setState({ liked: true }) }>Like</button>;
+    let button = (
+      <button onClick={() => this.setState({ liked: true })}>Like</button>
+    );
 
     if (this.state.liked) {
-      button = 'You liked this.';
+      button = "You liked this.";
     }
 
     return (
@@ -29,3 +31,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+//asd
